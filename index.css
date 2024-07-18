@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  border: 2px solid green;
+  height: 100lvh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  height: 350px;
+  /* border: 2px solid red; */
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.item-img {
+  /* border: 2px solid black; */
+  width: 50%;
+  object-fit: cover;
+}
+
+.description {
+  background-color: violet;
+  width: 60%;
+  z-index: 10;
+}
