@@ -84,3 +84,8 @@ body {
 .description h2 {
   font-family: "Manrope";
 }
+
+.desc-para {
+  font-size: 13px;
+  font-weight: 700;
+}
