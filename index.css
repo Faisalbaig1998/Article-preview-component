@@ -103,3 +103,27 @@ body {
   width: 40%;
   overflow: hidden;
 }
+
+.share-tag {
+  position: relative;
+  background: var(--Very_Dark_Grayish_Blue);
+  border-radius: 10px;
+  padding: 20px 40px;
+  color: white; /* Text color */
+  font-size: 1.2rem;
+  width: 200px;
+  height: 50px;
+  /* max-width: 400px; */
+  text-align: center;
+}
+
+.share-tag::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adjust as needed for pointer position */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 30px 30px 0; /* Adjust size of the triangle */
+  border-style: solid;
+  border-color: var(--Very_Dark_Grayish_Blue) transparent transparent transparent; /* Matching color */
+}
