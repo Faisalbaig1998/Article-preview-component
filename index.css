@@ -108,13 +108,15 @@ body {
   position: relative;
   background: var(--Very_Dark_Grayish_Blue);
   border-radius: 10px;
-  padding: 20px 40px;
+  padding: 20px;
   color: white; /* Text color */
-  font-size: 1.2rem;
   width: 200px;
   height: 50px;
-  /* max-width: 400px; */
+  max-width: 400px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .share-tag::after {
@@ -125,5 +127,19 @@ body {
   transform: translateX(-50%);
   border-width: 30px 30px 0; /* Adjust size of the triangle */
   border-style: solid;
-  border-color: var(--Very_Dark_Grayish_Blue) transparent transparent transparent; /* Matching color */
+  border-color: var(--Very_Dark_Grayish_Blue) transparent transparent
+    transparent;
+}
+
+.share-tag img {
+  height: 20px;
+}
+
+.share-tag span {
+  letter-spacing: 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
 }
