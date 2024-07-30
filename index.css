@@ -62,8 +62,8 @@ body {
 .avatar {
   width: 50%;
   align-items: center;
+  /* float: left; */
   display: flex;
-  float: left;
   border: 2px solid green;
 }
 
@@ -150,7 +150,6 @@ body {
 .share-div {
   width: 50%;
   height: auto;
-  float: left;
   border: 2px solid red;
   display: flex;
   flex-direction: column;
