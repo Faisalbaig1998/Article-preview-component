@@ -102,6 +102,7 @@ body {
 }
 
 .share-div {
+  border: 2px solid red;
   grid-column: 2/3;
   grid-row: 3/4;
   height: 120px;
@@ -178,7 +179,10 @@ body {
     border-radius: 0;
   }
   .description {
+    overflow: hidden;
     width: 100%;
+    position: relative;
+    border: 2px solid green;
   }
   body {
     width: 100vw;
@@ -186,7 +190,35 @@ body {
   }
   .share-tag {
     position: absolute;
-    width: 100%;
+    left: auto;
+    /* width: 0%; */
     bottom: 0px;
+    /* opacity: 0; */
+  }
+  .share-tag::after {
+    /* display: none; */
+  }
+  .mobile-sharetag {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    border: 2px solid blue;
+    bottom: 0;
+    align-items: center;
+    background-color: var(--Very_Dark_Grayish_Blue);
+  }
+  .mobile-sharetag img {
+    height: 40px;
+  }
+  .mobile-sharetag span {
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    color: white;
   }
 }
