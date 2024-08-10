@@ -34,3 +34,7 @@ function toggleShareTag() {
     shareTag.style.bottom = "50px";
   }
 }
+
+function changecontent() {
+  
+}
