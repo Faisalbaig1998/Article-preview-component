@@ -13,10 +13,12 @@ function toggleShareTag() {
   // Get the share tag and the image inside the share button
   var shareTag = document.getElementsByClassName("share-tag")[0];
   var image = shareButton.children[0];
+  var footer = document.getElementsByClassName("footer")[0];
 
   // Set transition styles for smooth animation
   shareTag.style.transition = "all 0.5s ease-in-out";
   shareButton.style.transition = "all 0.5s ease-in-out";
+  footer.style.transition = "all 0.5s ease-in-out";
 
   // Toggle the share tag visibility and button styling
   if (shareTag.style.opacity == 0) {
@@ -26,15 +28,13 @@ function toggleShareTag() {
     image.src =
       "article-preview-component-master/images/icon-share dark grey.svg";
     shareTag.style.bottom = "115px";
+    footer.style.opacity = 1;
   } else {
     // Hide the share tag and revert button color and image
     shareTag.style.opacity = 0;
     shareButton.style.backgroundColor = "hsl(210, 46%, 95%)";
     image.src = "article-preview-component-master/images/icon-share.svg";
     shareTag.style.bottom = "50px";
+    footer.style.opacity = 0;
   }
-}
-
-function changecontent() {
-  
 }
